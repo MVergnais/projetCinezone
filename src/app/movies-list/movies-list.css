@@ -1,0 +1,16 @@
+• container-movies {
+  height: 350px;
+  scrollbar-width: none;
+  -ms-overfllow-style: none;
+}
+.container-movies::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+h4.ms-5.mb-0 {
+  color: white;
+}
+.main-content {
+  transform: translate(0px, -110px);
+}

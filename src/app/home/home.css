@@ -1,0 +1,37 @@
+.main {
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url('https://placehold.co/600x400');
+}
+
+.overview {
+  height: 300px;
+}
+/* Bouton Play - jaune Cinézone */
+.btn-play {
+  background-color: #ffc107; /* même jaune que text-warning */
+  color: #000; /* texte noir pour contraste */
+  font-weight: bold;
+  border: none;
+}
+
+.btn-play:hover {
+  background-color: #e0a800; /* un jaune un peu plus foncé au hover */
+  color: #000;
+}
+
+/* Bouton Plus d'info - blanc au départ, fond sombre au hover */
+.btn-info-cine {
+  background-color: #fff; /* fond blanc initial */
+  border: 2px solid #ffc107; /* bordure jaune Cinézone */
+  color: #ffc107; /* texte jaune */
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-info-cine:hover {
+  background-color: #e0e0e0; /* gris clair au hover */
+  color: #ffc107; /* texte reste jaune */
+}
