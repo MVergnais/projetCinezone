@@ -1,10 +1,12 @@
-<div
-  class="me-2 movie"
-  style="
-    background-image: url('https://placehold.co/200x300');
-    background-size: cover;
-    background-position: center;
-  "
->
-  <div class="placeholder-poster"></div>
+<div class="movies-list">
+  @for (movie of movies; track $index) {
+    <div class="me-2 movie"
+         style="background-image: url('https://placehold.co/200x300');
+                background-size: cover;
+                background-position: center;">
+      <div class="movie-title">{{ movie.title }}</div>
+      <div class="placeholder-poster"></div>
+    </div>
+  }
 </div>
+
