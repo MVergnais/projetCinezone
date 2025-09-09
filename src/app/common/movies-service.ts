@@ -8,12 +8,13 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class MoviesService {
-  private baseUrl = 'http://localhost:3000/';
+  private baseUrl = 'http://localhost:3000';
 
   constructor(private http: HttpClient) {}
 
   // getMovies() → GET /movies - Stocke et renvoie la liste
   getMovies(): Observable<Movie[]> {
-    return this.http.get<Movie[]>(`${this.baseUrl}movies`);
+    console.log('coucou')
+    return this.http.get<Movie[]>(`${this.baseUrl}/movies`);
   }
 }

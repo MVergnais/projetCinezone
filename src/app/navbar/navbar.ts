@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterLink, RouterModule } from '@angular/router';
+
+import { from } from 'rxjs';
 //import { UserService } from '../services/user.service';
 
 @Component({
   selector: 'app-navbar',
-  imports: [],
+  imports: [RouterLink, RouterModule],
   templateUrl: './navbar.html',
   styleUrl: './navbar.css',
 })
@@ -18,5 +20,3 @@ export class Navbar {
     if (q) this.router.navigate(['/movies'], { queryParams: { q } });
   }
 }
-
-
